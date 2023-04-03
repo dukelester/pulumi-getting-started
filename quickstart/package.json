@@ -1,0 +1,13 @@
+{
+    "name": "quickstart",
+    "main": "index.js",
+    "dependencies": {
+        "@pulumi/gcp": "^6.0.0",
+        "@pulumi/pulumi": "^3.0.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.37.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-import": "^2.27.5"
+    }
+}
