@@ -10,4 +10,4 @@ const bucket = new gcp.storage.Bucket('my-bucket', {
 exports.bucketName = bucket.url;
 exports.bucketLocation = bucket.location;
 exports.name = bucket.name;
-exports.ptoject = bucket.project;
+exports.project = bucket.project;
