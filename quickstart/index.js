@@ -31,3 +31,5 @@ const bucketIAMBinding = new gcp.storage.BucketIAMBinding('bucket-IAMBinding', {
   role: 'roles/storage.objectViewer',
   members: ['allUsers'],
 });
+
+exports.bucketEnpoint = pulumi.concat('http://storage.googleapis.com/', bucket.name, '/', bucketObject.name);
