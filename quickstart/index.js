@@ -24,3 +24,9 @@ exports.bucketName = bucket.url;
 exports.bucketLocation = bucket.location;
 exports.name = bucket.name;
 exports.project = bucket.project;
+
+const bucketIAMBinding = new gcp.storage.BucketIAMBinding('bucket-IAMBinding', {
+  bucket: bucket.name,
+  role: 'roles/storage.objectViewer',
+  members: ['allUsers'],
+});
