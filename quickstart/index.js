@@ -10,6 +10,11 @@ const bucketObject = new gcp.storage.BucketObject('index.html', {
   bucket: bucket.name,
   source: new pulumi.asset.FileAsset('index.html'),
 });
+
+const styleObject = new gcp.storage.BucketObject('styles.css', {
+  bucket: bucket.name,
+  source: new pulumi.asset.FileAsset('styles.css'),
+});
 // Export the DNS name of the bucket
 exports.bucketName = bucket.url;
 exports.bucketLocation = bucket.location;
