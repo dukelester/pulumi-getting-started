@@ -12,6 +12,7 @@ const bucket = new gcp.storage.Bucket('my-bucket', {
 
 const bucketObject = new gcp.storage.BucketObject('index.html', {
   bucket: bucket.name,
+  contentType: 'text/html',
   source: new pulumi.asset.FileAsset('index.html'),
 });
 
