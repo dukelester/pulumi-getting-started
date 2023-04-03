@@ -4,6 +4,10 @@ const gcp = require('@pulumi/gcp');
 // Create a GCP resource (Storage Bucket)
 const bucket = new gcp.storage.Bucket('my-bucket', {
   location: 'US',
+  website: {
+    mainPageSuffix: 'index.html',
+  },
+  uniformBucketLevelAccess: true,
 });
 
 const bucketObject = new gcp.storage.BucketObject('index.html', {
