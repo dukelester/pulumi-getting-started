@@ -1,0 +1,4 @@
+config:
+  MERN-stack-app:backendPort: "3000"
+  MERN-stack-app:frontendPort: "3001"
+  MERN-stack-app:mongoPort: "27017"
