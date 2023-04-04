@@ -2,6 +2,10 @@
 const pulumi = require("@pulumi/pulumi");
 const docker = require('@pulumi/docker');
 
+const config = pulumi.Config();
+const frontendPort = config.requireNumber('frontendPort');
+const backendPort = config.requireNumber('backendPort');
+const mongoPort = config.requireNumber('mongoPort');
 
 const stack = pulumi.getStack();
 
