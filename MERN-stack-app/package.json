@@ -2,6 +2,7 @@
     "name": "MERN-stack-app",
     "main": "index.js",
     "dependencies": {
+        "@pulumi/docker": "^4.1.1",
         "@pulumi/pulumi": "^3.0.0"
     }
 }
